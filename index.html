@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Learnes</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__left">
+            <img id="slash" class="header__img" src="./assets/icons/Menu.svg" alt="imagen del icono del menu">
+            <img class="header__img" src="./assets/icons/LogoRecortado 2.svg" alt="imagen del logo miniatura">
+        </nav>
+        <img class="header__img" src="./assets/icons/User.svg" alt="imagen del usuario">
+    </header>
+    <main class="main">
+        <section  class="mainPage">
+            <img  class="mainPage__logo" src="./assets/icons/LogoRecortado 2.svg" alt="imagen del logo banner">
+            <h1 class="mainPage__title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, laudantium!</h1>
+            <p  class="mainPage__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A labore laboriosam quisquam ex quidem, fugiat voluptatem, autem iusto eius nesciunt pariatur ipsam quam quod praesentium voluptas deserunt. Nobis, rem dignissimos.
+            Repellat, veritatis numquam ab quod corporis id nesciunt quis officia commodi, est non ullam vel accusamus explicabo velit placeat blanditiis cum perferendis laudantium repudiandae? Excepturi deserunt cumque optio deleniti quidem?</p>
+            <button  class="mainPage__conoce-mas mainPage__button">Conoce mas</button>
+            <button class="mainPage__subscribite mainPage__button">!Suscríbete ya!</button>
+        </section>
+        <section class="slash  hidden">
+            <ul class="slash__opcions">
+                <li class="slash__opcion slash__aboutus">Acerca de nosotros</li>
+                <li class="slash__opcion slash__knowmore">Conoce mas</li>
+                <li class="slash__opcion slash__plans">Planes de suscripcion</li>
+            </ul>
+            <div class="slash__acount">
+                <button class="slash__login slash__button">Iniciar <br> sesion</button>
+                <button class="slash__logout slash__button">Crear cuenta</button>
+            </div>
+        </section>
+        <section class="aboutUs hidden">
+            <h2 class="aboutUs__title">Sobre nosotros</h2>
+            <div class="aboutUs__profiles">
+                <article class="aboutUs__member">
+                    <img class="aboutUs__img" src="./assets/imgs/jorge.svg" alt="imagen de perfil">
+                    <h3>Jorge Orrego</h3>
+                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, Python, SQL y Java </p>
+                </article>
+                <article class="aboutUs__member">
+                    <img class="aboutUs__img" src="./assets/imgs/mathias.svg" alt="imagen de perfil">
+                    <h3>Mathias Javier</h3>
+                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, SQL, React, Python, Javascript. </p>
+                </article>
+                <article class="aboutUs__member">
+                    <img class="aboutUs__img" src="./assets/imgs/carlos.svg" alt="imagen de perfil">
+                    <h3>Carlos</h3>
+                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, SQL, Python. Creativo y amigable. </p>
+                </article>
+                <article class="aboutUs__member">
+                    <img class="aboutUs__img" src="./assets/imgs/alejandro.svg" alt="imagen de perfil">
+                    <h3>Alejandro Pachas</h3>
+                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, React, Laravel,HTML5, CSS3, Javascript, SQL, Docker. </p>
+                </article>
+                <article class="aboutUs__member">
+                    <img class="aboutUs__img" src="./assets/imgs/marco.svg" alt="imagen de perfil">
+                    <h3>Marco Mendez</h3>
+                    <p>Estudiante de Ing. de Software en la UPC. Conocimientos en C++, SQL, Python. Persistente y amigable. </p>
+                </article>
+            </div>
+        </section>
+        <section class="conoce-mas hidden">
+            <h2 class="conoce-mas__title">Conoce mas</h2>
+            <div class="conoce-mas__container">
+                <article class="conoce-mas__card">
+                    <img class="conoce-mas__img" src="./assets/imgs/videos-educativos.svg" alt="imagen de videos educativos">
+                    <div class="conoce-mas__info">
+                        <h3>Videos Educativos</h3>
+                        <p>Ve tutoriales y videos teoricos, realizados cada uno por dessarolladores expertos en su campo.  </p>
+                    </div>
+                </article>
+                <article class="conoce-mas__card">
+                    <div class="conoce-mas__info">
+                        <h3>Repositorios</h3>
+                        <p>Aprende con repositorios de código hechos por expertosm en los cuales podrás encontrar desde ejercicios resueltos hasta proyectos completos   </p>
+                    </div>
+                    <img class="conoce-mas__img" src="./assets/imgs/repositorias.svg">
+                </article>
+                <article class="conoce-mas__card">
+                    <img class="conoce-mas__img" src="./assets/imgs/documentacion-actualizada.svg" alt="imagen de videos educativos">
+                    <div class="conoce-mas__info">
+                        <h3>Documentación Actualizada</h3>
+                        <p>Obtén la documentación más actualizada de cada lenguaje de programación, framework o software que puedas imaginar. Todo empaquetado para facilitar tu experiencia de búsquda.    </p>
+                    </div>
+                </article>
+                <article class="conoce-mas__card">
+                    <div class="conoce-mas__info">
+                        <h3>Foro de la comunidad</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu elit  ligula. Donec nec felis hendrerit, tincidunt lorem quis, laoreet quam.    </p>
+                    </div>
+                    <img class="conoce-mas__img" src="./assets/imgs/foro-comunidad.svg" alt="imagen de videos educativos">
+                </article>
+            </div>
+        </section>
+        <section class="planesSubcripcion hidden">
+            <h2 class="planesSubcripcion__title">Planes y Suscripciones</h2>
+            <div class="planesSubcripcion__container">
+                <article class="planesSubcripcion__card">
+                    <h4 class="planesSubcripcion__plan">Plan Basico</h4>
+                    <p class="planesSubcripcion__price">S/. 15.00 Mensuales</p>
+                    <div class="planesSubcripcion__line"></div>
+                    <div class="planesSubcripcion__benefits">
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>25 Videos Mensuales</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>10 Repositorios Mensuales</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Acceso a la documentación</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Acceso al foro</span>
+                        </p>
+                    </div>
+                    <button class="planesSubcripcion__button">!Suscribete ya!</button>
+                </article>
+                <article class="planesSubcripcion__card">
+                    <h4 class="planesSubcripcion__plan">Plan regular</h4>
+                    <p class="planesSubcripcion__price">S/. 20.00 Mensuales</p>
+                    <div class="planesSubcripcion__line"></div>
+                    <div class="planesSubcripcion__benefits">
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>50 Videos Mensuales</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>20 Repositorios Mensuales</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Acceso a la documentación</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Acceso al foro</span>
+                        </p>
+                    </div>
+                    <button class="planesSubcripcion__button">!Suscribete ya!</button>
+                </article>
+                <article class="planesSubcripcion__card">
+                    <h4 class="planesSubcripcion__plan">Plan premium</h4>
+                    <p class="planesSubcripcion__price">S/. 50.00 Mensuales</p>
+                    <div class="planesSubcripcion__line"></div>
+                    <div class="planesSubcripcion__benefits">
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Videos ilimitados</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Repositorios ilimitados</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Acceso a la documentación</span>
+                        </p>
+                        <p class="planesSubcripcion__benefit">
+                            <i class="bi bi-check-square-fill"></i>
+                            <span>Acceso al foro</span>
+                        </p>
+                    </div>
+                    <button class="planesSubcripcion__button">!Suscribete ya!</button>
+                </article>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <h4 class="footer__title">Contactanos</h4>
+            <ul class="footer__list">
+                <li>Tel: +51 912534678</li>
+                <li>Correo: servicioalcliente@fastlearnes.com</li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h4 class="footer__title">Legal</h4>
+            <ul class="footer__list">
+                <li>Terminos y Condiciones</li>
+                <li>Politica de privacidad</li>
+            </ul>
+        </section>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
