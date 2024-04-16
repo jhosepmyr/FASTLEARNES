@@ -1,5 +1,6 @@
 // ELEMENTOS DEL DOM
 const slash  = document.querySelector("img#slash");
+const logoHome = document.querySelector("#home");
 
 const allSections = document.querySelectorAll("main > section");
 
@@ -11,11 +12,14 @@ const sectionPlanes = document.querySelector("section.planesSubcripcion");
 
 const slashOpcions = document.querySelector(".slash__opcions");
 
+const headerOpcions = document.querySelector(".header__sections");
+
 
 //EVENTOS
 slash.addEventListener('click', openSlash);
+headerOpcions.addEventListener('click', openSection);
 slashOpcions.addEventListener('click', openSection);
-
+logoHome.addEventListener('click', home);
 
 // FUNCIONES
 function openSlash(){
@@ -28,9 +32,16 @@ function openSlash(){
     }
 }
 
-function openSection(e){
+function home(){
     hideAllSections();
+    sectionMainPage.classList.remove("hidden");
+}
+
+function openSection(e){
     const isLi  = e.target.nodeName =  'LI';
+    if (isLi) {
+        hideAllSections();
+    };
     if (e.target.classList.contains("slash__aboutus") && isLi) {
         sectionAboutUs.classList.remove("hidden");
     }
